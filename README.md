@@ -40,7 +40,7 @@ To cite this publication:
 - To install them:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements_PV_ROM.txt
 ```
 
 > Note: This project also depends on the **[PCA-Fold](https://github.com/kamilazdybal/PCAfold)** library, which must be installed separately.
