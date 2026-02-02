@@ -25,13 +25,19 @@ To cite this publication:
 
 ## Summary of the work
 
+Overvieww work...
+
 ## Graphical abstract
 
 ![Screenshot](Figures/graphical-abstract.png)
 
 ## Data
 
+Describe what type of data and provide script to generate the data...
+
 ## Code
+
+Describe different directories and files...
 
 ## Installation
 
