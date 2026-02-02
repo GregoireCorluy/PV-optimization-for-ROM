@@ -3,7 +3,7 @@
 <!--![DOI](https://zenodo.org/)(https://zenodo.org/) -->
 
 # Progress variable optimization: Effects on the manifold topology and reduced-order modeling
-This repository contains the code, data and results for the paper "Progress variable optimization: Effects on the manifold topology and reduced-order modeling" (under review for "Energy&AI", 2026).
+This repository contains the code, data and results for the paper:
 
 > G. Corlùy, K. Zdybał, A. Parente - [*Progress variable optimization: Effects on the manifold topology and reduced-order modeling*](doi...), under review for "Energy&AI", volume, (2026) page
 
