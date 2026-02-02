@@ -27,7 +27,7 @@ To cite this publication:
 
 ## Graphical abstract
 
-
+![Screenshot](Figures/graphical-abstract.png)
 
 ## Data
 
