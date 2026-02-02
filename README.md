@@ -35,6 +35,16 @@ To cite this publication:
 
 ## Installation
 
+- **Python version:** 3.10.10  
+- **Dependencies:** All necessary packages are listed in `requirements_PV_ROM.txt` at the root of the repository.  
+- To install them:
+
+```bash
+pip install -r requirements.txt
+```
+
+> Note: This project also depends on the **[PCA-Fold]([https://github.com/username/PCA-Fold](https://github.com/kamilazdybal/PCAfold))** library, which must be installed separately.
+
 ## Acknowledgements
 
 This work was supported by the Walloon Region through the Fonds de La Recherche Scientifique - FNRS for the FRFS-WEL-T under Grant n. WEL-T-CR-2023 A - 07.
