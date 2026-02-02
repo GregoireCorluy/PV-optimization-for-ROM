@@ -54,6 +54,7 @@ pip install -r requirements_PV_ROM.txt
 ## Acknowledgements
 
 This work was supported by the Walloon Region through the Fonds de La Recherche Scientifique - FNRS for the FRFS-WEL-T under Grant n. WEL-T-CR-2023 A - 07.
+A special thank to Kamila Zdybał who provided many snippets of codes or even complete notebooks for this work. Moreover, she also provided invaluable advice for the experiments, the figures, the graphical abstract and the work in general.
 
 ## Contact
 
