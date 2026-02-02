@@ -31,7 +31,7 @@ To cite this publication:
 
 ## Data
 
-## Results
+## Code
 
 ## Installation
 
