@@ -43,7 +43,7 @@ To cite this publication:
 pip install -r requirements.txt
 ```
 
-> Note: This project also depends on the **[PCA-Fold]([https://github.com/username/PCA-Fold](https://github.com/kamilazdybal/PCAfold))** library, which must be installed separately.
+> Note: This project also depends on the **[PCA-Fold](https://github.com/kamilazdybal/PCAfold)** library, which must be installed separately.
 
 ## Acknowledgements
 
