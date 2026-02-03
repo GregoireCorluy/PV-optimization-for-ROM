@@ -1,4 +1,5 @@
 ![Python Version](https://img.shields.io/badge/python-3.10.10-blue)
+![PyTorch Version](https://img.shields.io/badge/PyTorch-2.5.1-ee4c2c?logo=pytorch&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 <!--![DOI](https://zenodo.org/)(https://zenodo.org/) -->
 
@@ -42,7 +43,18 @@ Describe what type of data and provide script to generate the data... Comes from
 - **Metrics/** – Implementation of quantitative metrics for *a priori* manifold assessment.  
 - **Models/** – Model weights and the metadata of the PV source term models and full state-space models for the optimized and heuristic parametrizations.  
 - **Training/** – Scripts and notebooks to train the models and generate the dataset.
-
+  - `ANN_regression.py` – Class defining a standard PyTorch fully-connected artificial neural network.  
+  - `autoignition-data_generation-H2-air.ipynb` – Generates the dataset with a 0D batch reactor.  
+  - `Create-autoignition_augm-dataset-for-PV-encoder-decoder-training.ipynb` – Converts the generated dataset from `autoignition-data_generation-H2-air.ipynb` to a dataset in the correct format to train the encoder-decoder. Moreover, the logarithm of the species are added as additional features.  
+  - `loader.py` – Class defining a loader to load the model, training and validation curves and the metadata.  
+  - `models.py` – Class defining the architecture and all help functions of the encoder-decoder in PyTorch.
+  - `tools.py` – Functions used during the analysis to sample the dataset, load data, compute the density, visualize, compute metrics... 
+  - `Train-ANN-back full state space - sparse.ipynb` – Notebook to train the full state-space model of the sparsified optimized PV.  
+  - `Train-ANN-back full state space.ipynb` – Notebook to train the full state-space model of the optimized PV.  
+  - `Train-ANN-PV-source-model-seeds-sparse.py` – Python script to train the PV source term model of the sparsified optimized PV.  
+  - `Train-ANN-PV-source-model.py` – Python script to train the PV source term model of the optimized PV.
+  - `utils.py` – Script containing functions and classes to create directories, save models and metadata, get species names, get datasets in correct format, get the loss criterion and optimizer for the encoder-decoder training, get the variance or cost based on the variance file name.  
+  - `visualizations.py` – Functions to plot common figures like the f-PV manifold or the PV definition.
 
 ## Installation
 
