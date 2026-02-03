@@ -35,9 +35,14 @@ Reduced-order models (ROMs) have become increasingly popular in many engineering
 
 Describe what type of data and provide script to generate the data... Comes from code provided by Kamila
 
-## Code
+## Repository structure
 
-Describe different directories and files...
+- **Data/** – Data obtained from the different metrics (MSE and cost function) applied to the different models and parametrizations.  
+- **Figures/** – Notebooks to generate the figures from the paper.  
+- **Metrics/** – Implementation of quantitative metrics for *a priori* manifold assessment.  
+- **Models/** – Model weights and the metadata of the PV source term models and full state-space models for the optimized and heuristic parametrizations.  
+- **Training/** – Scripts and notebooks to train the models and generate the dataset.
+
 
 ## Installation
 
