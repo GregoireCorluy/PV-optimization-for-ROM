@@ -23,9 +23,9 @@ To cite this publication:
 }
 ```
 
-## Summary of the work
+## Background and motivation
 
-Overvieww work...
+Reduced-order models (ROMs) have become increasingly popular in many engineering and energy applications as a tool to design and optimize systems at a reduced computational cost. In the field of reacting flows, ROMs can be built by projecting the high-dimensional state space onto a low-dimensional manifold. In the past, the manifold parametrization was defined by physical variables based on expert knowledge. Recently, the encoder-decoder architecture has emerged as a tool to automatically optimize the manifold parametrization. Many successful implementations exist in the literature applying the encoder-decoder to find a manifold parametrization and perform a ROM simulation with it. However, there lacks a formal analysis to understand how an optimized parametrization performs better than a heuristic parametrization for a ROM simulation. Hence, this work compares the optimized parametrization with a heuristic one both *a priori* as *a posteriori* for a 0D hydrogen flame dataset. This work illustrates step-by-step how and why the optimized parametrization is better than the heuristic one and how it translates to the ROM performance.
 
 ## Graphical abstract
 
