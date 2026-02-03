@@ -32,9 +32,11 @@ Reduced-order models (ROMs) have become increasingly popular in many engineering
 
 ![Screenshot](Figures/graphical-abstract.png)
 
-## Data
+## Test case and training dataset
 
-Describe what type of data and provide script to generate the data... Comes from code provided by Kamila
+The test case is a premixed hydrogen flame in a 0D batch reactor with an initial temperature of 900K and atmospheric pressure. The reduced mechanism of Glarborg is used containing 21 species and 109 reactions. And the autoignition dataset is generated for 100 equally-spaced trajectories with the mixture fraction ranging from 0.015 to 0.035.
+
+The data has been generated with the notebook `autoignition-data_generation-H2-air.ipynb` provided by Kamila Zdybał and can be found ... as the files are too large in size to be stored on GitHub.
 
 ## Repository structure
 
