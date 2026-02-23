@@ -1,4 +1,5 @@
-![Python Version](https://img.shields.io/badge/python-3.10.10-blue)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18743453-blue)](https://doi.org/10.5281/zenodo.18743453)
+![Python Version](https://img.shields.io/badge/python-3.10.10-006400)
 ![PyTorch Version](https://img.shields.io/badge/PyTorch-2.5.1-ee4c2c?logo=pytorch&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 <!--![DOI](https://zenodo.org/)(https://zenodo.org/) -->
