@@ -43,13 +43,13 @@ for i in range(0,10):
 
     loader = loadData(filename_species_names, path_metadata, filename_metadata)
     output_idx = [1, 2, 3, 5, 10, 15, 16, 18, 19]  #loader.metadata["output species idx"]
-    idx_species_removed = loader.metadata["list idx species removed source"] if loader.metadata["dataset_type"].startswith("autoignition_augm") else loader.metadata["idx species removed"]
+    idx_species_removed = loader.metadata["list idx species removed source"] if 'augm' in loader.metadata["dataset_type"] else loader.metadata["idx species removed"]
     input_scaling = loader.metadata["input scaling"]
     input_species_scaling = loader.metadata["input species scaling"]
     input_species_bias = loader.metadata["input species bias"]
     range_mf  = loader.metadata["range_mf"]
     depvar_names_species = ['H2O2', 'H2O', 'H2', 'HO2', 'N2O', 'NO2', 'NO', 'O2', 'OH'] #loader.metadata["list species output"]
-    depvar_names_idx = loader.metadata["output idx Kreg"] if loader.metadata["dataset_type"]=="autoignition_augm" else loader.metadata["output elements"]
+    depvar_names_idx = loader.metadata["output idx Kreg"] if 'augm' in loader.metadata["dataset_type"] else loader.metadata["output elements"]
     if(loader.metadata["dataset_type"].startswith("autoignition_augm")):
         if(loader.metadata["Temperature at output"]):
             depvar_names_idx.append("T")

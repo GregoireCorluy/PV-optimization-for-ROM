@@ -49,8 +49,8 @@ scaleManifold = True
 save_MSE_all_observations = False
 
 loader = loadData(filename_species_names, path_metadata, filename_metadata)
-output_idx = loader.metadata["output idx Kreg"] if loader.metadata["dataset_type"].startswith("autoignition_augm") else loader.metadata["output species idx"]
-idx_species_removed = loader.metadata["list idx species removed source"] if loader.metadata["dataset_type"].startswith("autoignition_augm") else loader.metadata["idx species removed"]
+output_idx = loader.metadata["output idx Kreg"] if 'augm' in loader.metadata["dataset_type"] else loader.metadata["output species idx"]
+idx_species_removed = loader.metadata["list idx species removed source"] if 'augm' in loader.metadata["dataset_type"] else loader.metadata["idx species removed"]
 input_scaling = loader.metadata["input scaling"]
 input_species_scaling = loader.metadata["input species scaling"]
 input_species_bias = loader.metadata["input species bias"]
