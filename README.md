@@ -46,7 +46,7 @@ The test case is a premixed hydrogen flame in a 0D batch reactor with an initial
 
 The data has been generated with the notebook `autoignition-data_generation-H2-air.ipynb` provided by Kamila Zdybał and can be found on [Zenodo](https://zenodo.org/records/18743452) as the files are too large in size to be stored on GitHub.
 
-A flamelet dataset was used as second dataset to verify that the findings obtained with the autoignition dataset generalize to a more complex case. This dataset was generated with the script `flamelet-data_generation.py` written by Yuki Murakami. The freely-propagating flat flame of a premixed hydrogen-air mixture was generated with equally-spaced equivalence ratios ranging from 0.35 to 0.7 using the same Glarbord mechanism. The temperature and pressure where initialized to 300K and 1atm.
+A flamelet dataset was used as second dataset to verify that the findings obtained with the autoignition dataset generalize to a more complex case. This dataset was generated with the script `flamelet-data_generation.py` written by Yuki Murakami. The freely-propagating flat flame of a premixed hydrogen-air mixture was generated with equally-spaced equivalence ratios ranging from 0.35 to 0.7 using the same Glarborg mechanism. The temperature and pressure where initialized to 300K and 1atm.
 
 ## Repository structure
 
@@ -83,7 +83,7 @@ pip install -r requirements_PV_ROM.txt
 
 ## Acknowledgements
 
-This work was supported by the Walloon Region through the Fonds de La Recherche Scientifique - FNRS for the FRFS-WEL-T under Grant n. WEL-T-CR-2023 A - 07.
+This work was supported by the Walloon Region through the Fonds de La Recherche Scientifique - FNRS for the FRFS-WEL-T under Grant n. WEL-T-CR-2023 A-07.
 
 A special thank to Kamila Zdybał who provided many snippets of codes or even complete notebooks for this work. Moreover, she also provided invaluable advice for the experiments, the figures, the graphical abstract and the work in general.
 
