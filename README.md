@@ -1,4 +1,4 @@
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18743453-blue)](https://doi.org/10.5281/zenodo.18743453)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18743452-blue)](https://doi.org/10.5281/zenodo.18743452)
 ![Python Version](https://img.shields.io/badge/python-3.10.10-006400)
 ![PyTorch Version](https://img.shields.io/badge/PyTorch-2.5.1-ee4c2c?logo=pytorch&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -36,11 +36,17 @@ Reduced-order models (ROMs) have become increasingly popular in many engineering
 
 ![Screenshot](Figures/graphical-abstract.png)
 
+## What do we learn from the paper?
+
+The paper shows how stretching the important manifold regions help to improve the reduced-order model. This analysis is performed by comparing an optimized manifold obtained with the encoder-decoder with heuristic manifold parameterizations, defined based on expert knowledge. Owing to the species selected at the decoder's output, the encoder-decoder stretches out important manifold regions which facilitates regression of the source term and species. The improvements of the encoder-decoder are enhanced by two novel concepts: the trainable scaling layer and the QoIs transformed to the logarithmic scale. Both contributed and enhanced the stretching of the regions near the boundaries of the manifold, which furhter improved the accuracy of the ROM simulation. Additionally, the optimized progress variable, defined as a linear combination of the species mass fractions and obtained by the encoder-decoder, could be sparsified to only a few species without altering the manifold quality although the encoder-decoder used all species at the input.
+
 ## Test case and training dataset
 
 The test case is a premixed hydrogen flame in a 0D batch reactor with an initial temperature of 900K and atmospheric pressure. The reduced mechanism of Glarborg is used containing 21 species and 109 reactions. And the autoignition dataset is generated for 100 equally-spaced trajectories with the mixture fraction ranging from 0.015 to 0.035.
 
-The data has been generated with the notebook `autoignition-data_generation-H2-air.ipynb` provided by Kamila Zdybał and can be found ... as the files are too large in size to be stored on GitHub.
+The data has been generated with the notebook `autoignition-data_generation-H2-air.ipynb` provided by Kamila Zdybał and can be found on [Zenodo](https://zenodo.org/records/18743452) as the files are too large in size to be stored on GitHub.
+
+A flamelet dataset was used as second dataset to verify that the findings obtained with the autoignition dataset generalize to a more complex case. This dataset was generated with the script `flamelet-data_generation.py` written by Yuki Murakami. The freely-propagating flat flame of a premixed hydrogen-air mixture was generated with equally-spaced equivalence ratios ranging from 0.35 to 0.7 using the same Glarbord mechanism. The temperature and pressure where initialized to 300K and 1atm.
 
 ## Repository structure
 
@@ -51,7 +57,8 @@ The data has been generated with the notebook `autoignition-data_generation-H2-a
 - **Training/** – Scripts and notebooks to train the models and generate the dataset.
   - `ANN_regression.py` – Class defining a standard PyTorch fully-connected artificial neural network.  
   - `autoignition-data_generation-H2-air.ipynb` – Generates the dataset with a 0D batch reactor.  
-  - `Create-autoignition_augm-dataset-for-PV-encoder-decoder-training.ipynb` – Converts the generated dataset from `autoignition-data_generation-H2-air.ipynb` to a dataset in the correct format to train the encoder-decoder. Moreover, the logarithm of the species are added as additional features.  
+  - `Create-autoignition_augm-dataset-for-PV-encoder-decoder-training.ipynb` – Converts the generated dataset from `autoignition-data_generation-H2-air.ipynb` to a dataset in the correct format to train the encoder-decoder. Moreover, the logarithm of the species are added as additional features.
+  - `flamelet-data_generation.py` – Generates the flamelet dataset.
   - `loader.py` – Class defining a loader to load the model, training and validation curves and the metadata.  
   - `models.py` – Class defining the architecture and all help functions of the encoder-decoder in PyTorch.
   - `tools.py` – Functions used during the analysis to sample the dataset, load data, compute the density, visualize, compute metrics... 
