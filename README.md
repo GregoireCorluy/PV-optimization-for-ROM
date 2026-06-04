@@ -7,7 +7,9 @@
 # Progress variable optimization: Effects on the manifold topology and reduced-order modeling
 This repository contains the code, data and results for the paper:
 
-> G. Corlùy, K. Zdybał, A. Parente - [*Progress variable optimization: Effects on the manifold topology and reduced-order modeling*](doi...), under review for "Energy&AI", volume, (2026) page
+> G. Corlùy, K. Zdybał, A. Parente - [*Progress variable optimization: Effects on the manifold topology and reduced-order modeling*](10.1016/j.egyai.2026.100783), Energy&AI, 25:100783, September 2026
+
+You can find the open-source article here: https://www.sciencedirect.com/science/article/pii/S2666546826001096.
 
 To cite this publication:
 
@@ -15,13 +17,14 @@ To cite this publication:
 @article{corluy2026progress,
   title={Progress variable optimization: Effects on the manifold topology and reduced-order modeling},
   author={Corlùy, Grégoire and Zdybał, Kamila and Parente, Alessandro},
-  journal={Energy&AI},
-  volume={},
-  pages = {},
-  issn = {},
+  journal={Energy and AI},
+  volume={25},
+  pages = {100783},
+  issn = {2666-5468},
+  month = sep,
   year={2026},
-  publisher={},
-  doi={},
+  publisher={Elservier},
+  doi={10.1016/j.egyai.2026.100783},
 }
 ```
 
